@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+
+  <!-- html div for date container -->
+  <div class="date">
+    <div id='day'></div>
+    <div id='month'></div>
+    <div id='date'></div>
+    <div id='year'></div>
+  </div>
+
+  <!-- html div for clock container -->
+  <div class="clock">
+    <div id="hour">00</div>
+    <span>:</span>
+    <div id="minute">00</div>
+    <span>:</span>
+    <div id="seconds">00</div>
+  </div>
+
+  <!-- dark mode toggle button with svg icon -->
+  <button class="theme-toggle-button" id="btn">
+    <img id="moon" src="/images/dark_mode_black.svg" alt="">
+  </button>
+
+</body>
+</html>

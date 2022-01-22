@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  --transition-delay: .5s;
+
+
+  background: linear-gradient(to bottom, #72d7ff, #f29970);
+  height: 100vh;
+  display: flex;
+  gap: 6em;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Open Sans', sans-serif;
+  transition: .5s;
+
+}
+
+.clock {
+  width: 34.375rem;
+  height: 9.375rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: var(--transition-delay);
+
+}
+
+.clock div {
+  background: rgb(255, 255, 255);
+  height: 100%;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+  border-radius: 5px;
+  color: #000000;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  letter-spacing: 3px;
+}
+
+.clock span {
+  font-weight: bolder;
+  font-size: 60px;
+}
+
+.date {
+  display: flex;
+  gap: 1rem;
+  transition: var(--transition-delay);
+}
+
+
+.date div {
+  background: rgb(255, 255, 255);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  border-radius: 5px;
+  color: #000000;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  
+}
+
+button {
+  background:rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 0.45rem 0.45rem 0.45rem 0.45rem;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  transition: var(--transition-delay);
+  transform: scale(1);
+}
+
+
+button:hover,
+button:focus {
+  transform: scale(1.1);
+  
+}
+
+body.dark {
+  background: linear-gradient(to bottom, #5b35b6, #161616);
+  transition: var(--transition-delay);
+  color: white;
+}
+
+#day.dark,
+#month.dark,
+#date.dark,
+#year.dark,
+#hour.dark,
+#minute.dark,
+#seconds.dark {
+  background:rgb(97, 97, 97);
+  color: white;
+  transition: var(--transition-delay);
+}
+
+#btn.dark {
+  background:rgb(97, 97, 97);
+}
+
+@media screen and (max-width: 700px) {
+  .clock {
+    width: 17.1875rem;
+    height: 4.6875rem;
+  }
+
+  .clock div {
+    height: 100%;
+    width: 35vw;
+    font-size: 2rem;
+  }
+
+  .clock span {
+    font-size: 2.5em;
+  }
+
+  .date {
+    gap: .5rem;
+  }
+
+}
