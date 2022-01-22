@@ -61,10 +61,10 @@ const darkMode = document.querySelector('.theme-toggle-button').addEventListener
   document.getElementById('btn').classList.toggle('dark')
 
   if(darkModeOn === false) {
-    document.getElementById("moon").src="/dark_mode_white.svg";
+    document.getElementById("moon").src="images/dark_mode_white.svg";
     darkModeOn = true;
   } else {
-    document.getElementById("moon").src="/dark_mode_black.svg";
+    document.getElementById("moon").src="images/dark_mode_black.svg";
     darkModeOn = false;
   }
 })
